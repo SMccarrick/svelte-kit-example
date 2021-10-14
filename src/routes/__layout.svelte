@@ -6,7 +6,7 @@
 
 <Header />
 
-<main>
+<main class="container mx-6">
   <slot />
 </main>
 

@@ -1,46 +1,46 @@
 <script context="module" lang="ts">
   export const prerender = true;
+
+  /**
+   * TODO:
+   *
+   * - Create store for talking points
+   * - on plus icon click add a new talking point to store as an array entry
+   * - display entry on card inside the talking point column
+   * - create a unique id for each entry
+   *
+   * - update ?????
+   *
+   * - Delete talking point from store
+   * - on the cross icon on the talking point on pressed
+   * - bring up a tooltip/modal to confirm the deletion
+   * - if yes is selected
+   * - removed talking point from store
+   *
+   * -
+   * */
 </script>
 
 <svelte:head>
-  <title>Home</title>
+  <title>Lean coffee app</title>
 </svelte:head>
 
-<div class="hero min-h-screen bg-base-200">
-  <div class="flex-col justify-center hero-content lg:flex-row">
-    <div class="text-center lg:text-left">
-      <h1 class="mb-5 text-5xl font-bold">Hello there</h1>
-      <p class="mb-5">
-        Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda
-        excepturi exercitationem quasi. In deleniti eaque aut repudiandae et a
-        id nisi.
-      </p>
-    </div>
-    <div class="card flex-shrink-0 w-full max-w-sm shadow-2xl bg-base-100">
-      <div class="card-body">
-        <div class="form-control">
-          <label class="label">
-            <span class="label-text">Email</span>
-          </label>
-          <input type="text" placeholder="email" class="input input-bordered" />
-        </div>
-        <div class="form-control">
-          <label class="label">
-            <span class="label-text">Password</span>
-          </label>
-          <input
-            type="text"
-            placeholder="password"
-            class="input input-bordered"
-          />
-          <label class="label">
-            <a href="#" class="label-text-alt">Forgot password?</a>
-          </label>
-        </div>
-        <div class="form-control mt-6">
-          <input type="button" value="Login" class="btn btn-primary" />
-        </div>
-      </div>
-    </div>
+<div class="grid grid-cols-3 gap-4">
+  <!-- <div class="flex"> -->
+  <h3 class="text-lg font-bold">
+    Talking points
+    <button><i class="ph-plus" /> </button>
+  </h3>
+  <h3 class="text-md font-bold">Current point</h3>
+  <h3 class="text-md font-bold">Finished points</h3>
+  <!-- </div> -->
+
+  <!-- Create a talking point card button -->
+  <div class="card bg-primary p-4">
+    <div class="text-md font-bold">Create discussion point</div>
+    <!-- plus icon -->
   </div>
+
+  <!-- Create  -->
+  <div class="card" />
 </div>
